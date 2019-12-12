@@ -1,0 +1,16 @@
+ul.tree {
+  margin-left: 10px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul.tree.open {
+  display: block;
+}
+
+ul.tree.closed {
+  display: none;
+}

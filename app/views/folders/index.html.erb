@@ -1,0 +1,7 @@
+<div class="container">
+  <ul class="fa-ul tree open">
+    <% @folders.each do |folder| %>
+      <%= render 'folder', folder: folder %>
+    <% end %>
+  </ul>
+</div>

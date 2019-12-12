@@ -1,0 +1,11 @@
+<li data-controller="folder" data-action="click->folder#toggle">
+  <i class="fa-li fa fa-folder" data-target="folder.icon"></i>
+  <%= folder[:name] %>
+  <% if folder[:folders].present? %>
+    <ul class="fa-ul tree closed" data-target="folder.tree">
+      <% folder[:folders].each do |folder| %>
+        <%= render 'folder', folder: folder %>
+      <% end %>
+    </ul>
+  <% end %>
+</li>
